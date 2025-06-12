@@ -1,0 +1,23 @@
+# Exclude envs folder
+miniconda3/
+
+# Exclude all folders named "Model" containing large LLMs
+models/
+
+# Accelerate
+=0.26.0
+
+# Tools etc.
+/tools
+
+/tmp
+
+/.offload
+
+/downloads
+
+# Temp files and caches
+**/__pycache__/
+
+# My notes 
+notes.txt

@@ -1,0 +1,654 @@
+Layer                                         Output Shape                   GPU Latency (ms)     CPU Latency (ms)     GPU Power (mW)       CPU Power (mW)      
+===========================================================================================================================================================
+model.embed_tokens                            torch.Size([1, 1, 2048])       0.394976             0.922203             621.824000           3109.120000         
+model.rotary_emb                              torch.Size([1, 1, 128])        2.393312             2.641916             621.824000           3165.158400         
+model.layers.0.input_layernorm                torch.Size([1, 1, 2048])       0.814944             0.971794             621.824000           3263.232000         
+model.layers.0.self_attn.q_proj               torch.Size([1, 1, 2048])       0.738176             1.006603             621.824000           3387.545600         
+model.layers.0.self_attn.k_proj               torch.Size([1, 1, 2048])       0.600896             0.821352             621.781333           3418.624000         
+model.layers.0.self_attn.v_proj               torch.Size([1, 1, 2048])       0.637056             0.842333             621.568000           3510.976000         
+model.layers.0.self_attn.o_proj               torch.Size([1, 1, 2048])       0.698784             0.906944             776.960000           3572.544000         
+model.layers.0.post_attention_layernorm       torch.Size([1, 1, 2048])       0.841216             0.990868             973.478400           3571.562667         
+model.layers.0.mlp.experts.8.gate_proj        torch.Size([1, 1408])          0.392192             0.541449             683.724800           3883.520000         
+model.layers.0.mlp.experts.8.act_fn           torch.Size([1, 1408])          0.184384             0.285387             776.960000           3883.200000         
+model.layers.0.mlp.experts.8.up_proj          torch.Size([1, 1408])          0.427072             0.546455             808.038400           3883.200000         
+model.layers.0.mlp.experts.8.down_proj        torch.Size([1, 2048])          0.581792             0.765562             932.121600           3883.200000         
+model.layers.0.mlp.experts.16.gate_proj       torch.Size([1, 1408])          0.470816             0.595570             807.897600           4193.856000         
+model.layers.0.mlp.experts.16.act_fn          torch.Size([1, 1408])          0.205024             0.331402             931.968000           4193.856000         
+model.layers.0.mlp.experts.16.up_proj         torch.Size([1, 1408])          0.404896             0.524044             931.968000           4192.819200         
+model.layers.0.mlp.experts.16.down_proj       torch.Size([1, 2048])          0.423744             0.607967             1056.230400          4192.128000         
+model.layers.0.mlp.experts.33.gate_proj       torch.Size([1, 1408])          0.374560             0.596046             725.248000           3832.202667         
+model.layers.0.mlp.experts.33.act_fn          torch.Size([1, 1408])          0.139136             0.236273             776.960000           3883.200000         
+model.layers.0.mlp.experts.33.up_proj         torch.Size([1, 1408])          0.350784             0.461578             839.116800           3883.200000         
+model.layers.0.mlp.experts.33.down_proj       torch.Size([1, 2048])          0.515072             0.692844             994.508800           3883.200000         
+model.layers.0.mlp.experts.44.gate_proj       torch.Size([1, 1408])          0.350784             0.554323             808.038400           3883.840000         
+model.layers.0.mlp.experts.44.act_fn          torch.Size([1, 1408])          0.126144             0.264645             932.352000           3883.200000         
+model.layers.0.mlp.experts.44.up_proj         torch.Size([1, 1408])          0.342976             0.493288             932.352000           3883.200000         
+model.layers.0.mlp.experts.44.down_proj       torch.Size([1, 2048])          0.363008             0.511646             1056.486400          3883.200000         
+model.layers.0.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          0.834336             1.026154             808.089600           3728.486400         
+model.layers.0.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.121440             0.217199             1087.520000          3727.872000         
+model.layers.0.mlp.shared_expert.up_proj      torch.Size([1, 5632])          0.774656             0.943422             1366.758400          3726.643200         
+model.layers.0.mlp.shared_expert.down_proj    torch.Size([1, 2048])          0.966144             1.220942             1738.803200          3725.107200         
+model.layers.0.mlp.shared_expert_gate         torch.Size([1, 1])             0.286016             0.411987             2017.600000          3723.648000         
+model.layers.1.input_layernorm                torch.Size([1, 1, 2048])       0.592576             0.719309             2152.106667          3723.468800         
+model.layers.1.self_attn.q_proj               torch.Size([1, 1, 2048])       0.455520             0.563622             2121.066667          3723.264000         
+model.layers.1.self_attn.k_proj               torch.Size([1, 1, 2048])       0.511936             0.710249             2234.688000          3723.264000         
+model.layers.1.self_attn.v_proj               torch.Size([1, 1, 2048])       0.427584             0.584602             2378.752000          3723.264000         
+model.layers.1.self_attn.o_proj               torch.Size([1, 1, 2048])       0.508704             0.719309             2482.176000          3722.342400         
+model.layers.1.post_attention_layernorm       torch.Size([1, 1, 2048])       0.545440             0.676870             2453.088000          3732.672000         
+model.layers.1.mlp.experts.0.gate_proj        torch.Size([1, 1408])          0.348000             0.519276             2327.424000          3723.264000         
+model.layers.1.mlp.experts.0.act_fn           torch.Size([1, 1408])          0.122208             0.217915             2327.520000          3723.264000         
+model.layers.1.mlp.experts.0.up_proj          torch.Size([1, 1408])          0.419904             0.695705             2327.232000          3723.264000         
+model.layers.1.mlp.experts.0.down_proj        torch.Size([1, 2048])          0.383136             0.558138             2404.608000          3723.264000         
+model.layers.1.mlp.experts.29.gate_proj       torch.Size([1, 1408])          0.391168             0.566483             714.803200           4193.856000         
+model.layers.1.mlp.experts.29.act_fn          torch.Size([1, 1408])          0.141408             0.231981             776.960000           4193.856000         
+model.layers.1.mlp.experts.29.up_proj         torch.Size([1, 1408])          0.312736             0.476122             854.656000           4038.528000         
+model.layers.1.mlp.experts.29.down_proj       torch.Size([1, 2048])          0.352800             0.573397             994.252800           4037.862400         
+model.layers.1.mlp.experts.42.gate_proj       torch.Size([1, 1408])          0.405248             0.581980             776.960000           3883.840000         
+model.layers.1.mlp.experts.42.act_fn          torch.Size([1, 1408])          0.151072             0.272751             776.960000           3883.200000         
+model.layers.1.mlp.experts.42.up_proj         torch.Size([1, 1408])          0.350400             0.527382             901.273600           3883.200000         
+model.layers.1.mlp.experts.42.down_proj       torch.Size([1, 2048])          0.370336             0.605345             1025.318400          3883.200000         
+model.layers.1.mlp.experts.56.gate_proj       torch.Size([1, 1408])          0.409952             0.494480             776.768000           4504.512000         
+model.layers.1.mlp.experts.56.act_fn          torch.Size([1, 1408])          0.149280             0.242710             776.640000           4504.512000         
+model.layers.1.mlp.experts.56.up_proj         torch.Size([1, 1408])          0.323264             0.486851             900.902400           4472.345600         
+model.layers.1.mlp.experts.56.down_proj       torch.Size([1, 2048])          0.353408             0.512838             1056.230400          4347.392000         
+model.layers.1.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          0.783744             1.015902             1118.361600          4192.473600         
+model.layers.1.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.136032             0.234842             1397.376000          4191.264000         
+model.layers.1.mlp.shared_expert.up_proj      torch.Size([1, 5632])          0.838240             1.019955             1645.504000          4159.027200         
+model.layers.1.mlp.shared_expert.down_proj    torch.Size([1, 2048])          0.932000             1.093149             2249.904000          4033.120000         
+model.layers.1.mlp.shared_expert_gate         torch.Size([1, 1])             0.286240             0.464678             2822.745600          4031.872000         
+model.layers.2.input_layernorm                torch.Size([1, 1, 2048])       0.689568             0.868082             2915.908267          4031.872000         
+model.layers.2.self_attn.q_proj               torch.Size([1, 1, 2048])       0.459808             0.636816             2885.043200          4031.872000         
+model.layers.2.self_attn.k_proj               torch.Size([1, 1, 2048])       0.464480             0.649214             3132.454400          4030.540800         
+model.layers.2.self_attn.v_proj               torch.Size([1, 1, 2048])       0.414048             0.567913             3318.540800          4030.208000         
+model.layers.2.self_attn.o_proj               torch.Size([1, 1, 2048])       0.464096             0.669956             3565.760000          4029.542400         
+model.layers.2.post_attention_layernorm       torch.Size([1, 1, 2048])       0.652032             0.756979             3524.710400          3999.206400         
+model.layers.2.mlp.experts.0.gate_proj        torch.Size([1, 1408])          0.393600             0.625610             3349.555200          3875.200000         
+model.layers.2.mlp.experts.0.act_fn           torch.Size([1, 1408])          0.162720             0.259876             3411.584000          3875.200000         
+model.layers.2.mlp.experts.0.up_proj          torch.Size([1, 1408])          0.336288             0.537872             3411.584000          3875.200000         
+model.layers.2.mlp.experts.0.down_proj        torch.Size([1, 2048])          0.387360             0.575781             3535.052800          3875.200000         
+model.layers.2.mlp.experts.39.gate_proj       torch.Size([1, 1408])          0.375168             0.611544             1056.665600          3727.872000         
+model.layers.2.mlp.experts.39.act_fn          torch.Size([1, 1408])          0.177792             0.272751             1243.136000          3727.872000         
+model.layers.2.mlp.experts.39.up_proj         torch.Size([1, 1408])          0.340224             0.406265             1305.177600          3727.872000         
+model.layers.2.mlp.experts.39.down_proj       torch.Size([1, 2048])          0.352224             0.537634             1475.616000          3727.104000         
+model.layers.2.mlp.experts.52.gate_proj       torch.Size([1, 1408])          0.399296             0.591278             1243.136000          3727.872000         
+model.layers.2.mlp.experts.52.act_fn          torch.Size([1, 1408])          0.180704             0.301838             1398.528000          3727.872000         
+model.layers.2.mlp.experts.52.up_proj         torch.Size([1, 1408])          0.316480             0.464916             1449.920000          3727.872000         
+model.layers.2.mlp.experts.52.down_proj       torch.Size([1, 2048])          0.378240             0.563860             1646.476800          3726.336000         
+model.layers.2.mlp.experts.59.gate_proj       torch.Size([1, 1408])          0.342656             0.427485             1491.264000          3758.003200         
+model.layers.2.mlp.experts.59.act_fn          torch.Size([1, 1408])          0.112864             0.229359             1553.280000          3726.336000         
+model.layers.2.mlp.experts.59.up_proj         torch.Size([1, 1408])          0.342208             0.409126             1630.944000          3726.336000         
+model.layers.2.mlp.experts.59.down_proj       torch.Size([1, 2048])          0.341536             0.555277             1894.668800          3726.336000         
+model.layers.2.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          0.804704             0.988245             2235.404800          3724.185600         
+model.layers.2.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.112416             0.249624             2716.000000          3723.264000         
+model.layers.2.mlp.shared_expert.up_proj      torch.Size([1, 5632])          0.750720             0.912189             3025.440000          3722.112000         
+model.layers.2.mlp.shared_expert.down_proj    torch.Size([1, 2048])          0.951168             1.144886             3597.670400          3782.502400         
+model.layers.2.mlp.shared_expert_gate         torch.Size([1, 1])             0.334496             0.438213             4107.712000          3874.000000         
+model.layers.3.input_layernorm                torch.Size([1, 1, 2048])       0.659648             0.810146             4059.472000          3719.616000         
+model.layers.3.self_attn.q_proj               torch.Size([1, 1, 2048])       0.451360             0.627041             3968.844800          3720.192000         
+model.layers.3.self_attn.k_proj               torch.Size([1, 1, 2048])       0.422720             0.658989             4123.212800          3718.656000         
+model.layers.3.self_attn.v_proj               torch.Size([1, 1, 2048])       0.501952             0.654459             4278.220800          3718.656000         
+model.layers.3.self_attn.o_proj               torch.Size([1, 1, 2048])       0.434624             0.597477             4463.104000          3718.656000         
+model.layers.3.post_attention_layernorm       torch.Size([1, 1, 2048])       0.584608             0.714540             4370.730667          3718.656000         
+model.layers.3.mlp.experts.19.gate_proj       torch.Size([1, 1408])          0.382912             0.464916             1552.640000          4501.542400         
+model.layers.3.mlp.experts.19.act_fn          torch.Size([1, 1408])          0.134592             0.252962             1707.904000          4656.000000         
+model.layers.3.mlp.experts.19.up_proj         torch.Size([1, 1408])          0.302464             0.458956             1707.786667          4656.000000         
+model.layers.3.mlp.experts.19.down_proj       torch.Size([1, 2048])          0.343776             0.479698             1901.200000          4655.520000         
+model.layers.3.mlp.experts.33.gate_proj       torch.Size([1, 1408])          0.344640             0.497103             1242.713600          4162.099200         
+model.layers.3.mlp.experts.33.act_fn          torch.Size([1, 1408])          0.116736             0.207186             1397.952000          4192.128000         
+model.layers.3.mlp.experts.33.up_proj         torch.Size([1, 1408])          0.306400             0.434637             1460.083200          4192.128000         
+model.layers.3.mlp.experts.33.down_proj       torch.Size([1, 2048])          0.369664             0.534534             1630.432000          4346.496000         
+model.layers.3.mlp.experts.35.gate_proj       torch.Size([1, 1408])          0.321984             0.463009             1801.062400          4345.600000         
+model.layers.3.mlp.experts.35.act_fn          torch.Size([1, 1408])          0.112352             0.204563             1863.168000          4345.600000         
+model.layers.3.mlp.experts.35.up_proj         torch.Size([1, 1408])          0.330720             0.501633             1956.326400          4345.600000         
+model.layers.3.mlp.experts.35.down_proj       torch.Size([1, 2048])          0.402400             0.538349             2134.656000          4345.600000         
+model.layers.3.mlp.experts.51.gate_proj       torch.Size([1, 1408])          0.331872             0.473499             1335.820800          4037.529600         
+model.layers.3.mlp.experts.51.act_fn          torch.Size([1, 1408])          0.111840             0.202417             1397.952000          4036.864000         
+model.layers.3.mlp.experts.51.up_proj         torch.Size([1, 1408])          0.318848             0.463009             1491.148800          4036.864000         
+model.layers.3.mlp.experts.51.down_proj       torch.Size([1, 2048])          0.372320             0.509977             1739.084800          4036.864000         
+model.layers.3.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          0.786976             0.935555             1630.576000          3881.200000         
+model.layers.3.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.116960             0.211000             2096.064000          3880.000000         
+model.layers.3.mlp.shared_expert.up_proj      torch.Size([1, 5632])          0.756928             0.916958             2483.148800          3878.720000         
+model.layers.3.mlp.shared_expert.down_proj    torch.Size([1, 2048])          0.956192             1.090765             3024.816000          3876.800000         
+model.layers.3.mlp.shared_expert_gate         torch.Size([1, 1])             0.226272             0.316381             3566.656000          3875.200000         
+model.layers.4.input_layernorm                torch.Size([1, 1, 2048])       0.606272             0.700951             3576.348000          3875.500000         
+model.layers.4.self_attn.q_proj               torch.Size([1, 1, 2048])       0.468416             0.626326             3489.120000          3875.466667         
+model.layers.4.self_attn.k_proj               torch.Size([1, 1, 2048])       0.495936             0.713825             3659.392000          3875.200000         
+model.layers.4.self_attn.v_proj               torch.Size([1, 1, 2048])       0.414944             0.552177             3844.505600          3875.200000         
+model.layers.4.self_attn.o_proj               torch.Size([1, 1, 2048])       0.426208             0.581741             4061.209600          3873.920000         
+model.layers.4.post_attention_layernorm       torch.Size([1, 1, 2048])       0.583968             0.679255             4009.540267          3957.013333         
+model.layers.4.mlp.experts.16.gate_proj       torch.Size([1, 1408])          0.355488             0.440121             1646.476800          3881.600000         
+model.layers.4.mlp.experts.16.act_fn          torch.Size([1, 1408])          0.126688             0.216722             1708.608000          3881.600000         
+model.layers.4.mlp.experts.16.up_proj         torch.Size([1, 1408])          0.302080             0.483990             1801.344000          3881.600000         
+model.layers.4.mlp.experts.16.down_proj       torch.Size([1, 2048])          0.341632             0.504494             2018.432000          3880.400000         
+model.layers.4.mlp.experts.17.gate_proj       torch.Size([1, 1408])          0.331264             0.486851             2235.801600          3880.000000         
+model.layers.4.mlp.experts.17.act_fn          torch.Size([1, 1408])          0.139648             0.232458             2328.960000          3880.000000         
+model.layers.4.mlp.experts.17.up_proj         torch.Size([1, 1408])          0.327872             0.479221             2359.616000          3880.000000         
+model.layers.4.mlp.experts.17.down_proj       torch.Size([1, 2048])          0.343232             0.475645             2522.000000          3878.800000         
+model.layers.4.mlp.experts.25.gate_proj       torch.Size([1, 1408])          0.357184             0.442028             1894.528000          3881.600000         
+model.layers.4.mlp.experts.25.act_fn          torch.Size([1, 1408])          0.111008             0.233650             2018.432000          3881.600000         
+model.layers.4.mlp.experts.25.up_proj         torch.Size([1, 1408])          0.303680             0.455141             2049.484800          3880.000000         
+model.layers.4.mlp.experts.25.down_proj       torch.Size([1, 2048])          0.346400             0.491381             2212.512000          3880.000000         
+model.layers.4.mlp.experts.41.gate_proj       torch.Size([1, 1408])          0.352320             0.447750             1212.057600          3727.872000         
+model.layers.4.mlp.experts.41.act_fn          torch.Size([1, 1408])          0.111520             0.201464             1243.136000          3727.872000         
+model.layers.4.mlp.experts.41.up_proj         torch.Size([1, 1408])          0.303360             0.442505             1367.104000          3727.872000         
+model.layers.4.mlp.experts.41.down_proj       torch.Size([1, 2048])          0.366496             0.496864             1491.148800          3726.336000         
+model.layers.4.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          0.800352             0.964403             1113.600000          3572.544000         
+model.layers.4.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.140448             0.229597             1449.728000          3571.072000         
+model.layers.4.mlp.shared_expert.up_proj      torch.Size([1, 5632])          0.818048             0.988960             1708.224000          3570.581333         
+model.layers.4.mlp.shared_expert.down_proj    torch.Size([1, 2048])          0.917376             1.052380             2302.421333          3568.864000         
+model.layers.4.mlp.shared_expert_gate         torch.Size([1, 1])             0.197600             0.286341             2730.828800          3568.128000         
+model.layers.5.input_layernorm                torch.Size([1, 1, 2048])       0.535584             0.630140             2565.364706          3568.128000         
+model.layers.5.self_attn.q_proj               torch.Size([1, 1, 2048])       0.481824             0.695467             2527.542857          3568.128000         
+model.layers.5.self_attn.k_proj               torch.Size([1, 1, 2048])       0.428384             0.584841             2663.893333          3568.128000         
+model.layers.5.self_attn.v_proj               torch.Size([1, 1, 2048])       0.435296             0.582457             2792.448000          3567.707429         
+model.layers.5.self_attn.o_proj               torch.Size([1, 1, 2048])       0.429888             0.604868             2921.728000          3566.656000         
+model.layers.5.post_attention_layernorm       torch.Size([1, 1, 2048])       0.596960             0.696659             2883.704471          3567.348706         
+model.layers.5.mlp.experts.9.gate_proj        torch.Size([1, 1408])          0.344640             0.527382             1491.148800          3571.660800         
+model.layers.5.mlp.experts.9.act_fn           torch.Size([1, 1408])          0.115584             0.213861             1553.280000          3571.072000         
+model.layers.5.mlp.experts.9.up_proj          torch.Size([1, 1408])          0.307104             0.461102             1630.944000          3571.072000         
+model.layers.5.mlp.experts.9.down_proj        torch.Size([1, 2048])          0.371552             0.574827             1786.080000          3571.072000         
+model.layers.5.mlp.experts.10.gate_proj       torch.Size([1, 1408])          0.330240             0.491381             1914.922667          3570.581333         
+model.layers.5.mlp.experts.10.act_fn          torch.Size([1, 1408])          0.140288             0.234127             2018.432000          3570.090667         
+model.layers.5.mlp.experts.10.up_proj         torch.Size([1, 1408])          0.300512             0.494957             2018.432000          3569.600000         
+model.layers.5.mlp.experts.10.down_proj       torch.Size([1, 2048])          0.341600             0.479221             2111.590400          3569.600000         
+model.layers.5.mlp.experts.22.gate_proj       torch.Size([1, 1408])          0.349280             0.457764             1211.558400          4130.355200         
+model.layers.5.mlp.experts.22.act_fn          torch.Size([1, 1408])          0.114656             0.202656             1242.624000          4192.128000         
+model.layers.5.mlp.experts.22.up_proj         torch.Size([1, 1408])          0.302688             0.489712             1335.820800          4192.128000         
+model.layers.5.mlp.experts.22.down_proj       torch.Size([1, 2048])          0.348352             0.495672             1475.152000          4192.128000         
+model.layers.5.mlp.experts.42.gate_proj       torch.Size([1, 1408])          0.364416             0.528097             963.430400           4038.528000         
+model.layers.5.mlp.experts.42.act_fn          torch.Size([1, 1408])          0.123232             0.216722             1087.744000          4038.528000         
+model.layers.5.mlp.experts.42.up_proj         torch.Size([1, 1408])          0.319040             0.485420             1118.540800          4038.528000         
+model.layers.5.mlp.experts.42.down_proj       torch.Size([1, 2048])          0.362048             0.517607             1304.755200          4037.196800         
+model.layers.5.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          0.789504             0.950575             1056.460800          3882.560000         
+model.layers.5.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.113024             0.200272             1475.616000          3881.600000         
+model.layers.5.mlp.shared_expert.up_proj      torch.Size([1, 5632])          0.789056             0.927448             1669.248000          3880.800000         
+model.layers.5.mlp.shared_expert.down_proj    torch.Size([1, 2048])          0.921088             1.051664             2172.966400          3879.040000         
+model.layers.5.mlp.shared_expert_gate         torch.Size([1, 1])             0.202624             0.291586             2637.568000          3877.200000         
+model.layers.6.input_layernorm                torch.Size([1, 1, 2048])       0.613632             0.706911             2792.448000          3877.120000         
+model.layers.6.self_attn.q_proj               torch.Size([1, 1, 2048])       0.460480             0.606537             2761.420800          3877.120000         
+model.layers.6.self_attn.k_proj               torch.Size([1, 1, 2048])       0.465856             0.641108             3009.382400          3876.800000         
+model.layers.6.self_attn.v_proj               torch.Size([1, 1, 2048])       0.440448             0.621557             3163.468800          3875.840000         
+model.layers.6.self_attn.o_proj               torch.Size([1, 1, 2048])       0.463072             0.627041             3380.569600          3875.200000         
+model.layers.6.post_attention_layernorm       torch.Size([1, 1, 2048])       0.567008             0.666857             3370.231467          3875.413333         
+model.layers.6.mlp.experts.37.gate_proj       torch.Size([1, 1408])          0.348832             0.519037             1087.744000          3883.200000         
+model.layers.6.mlp.experts.37.act_fn          torch.Size([1, 1408])          0.120384             0.217438             1243.136000          3883.200000         
+model.layers.6.mlp.experts.37.up_proj         torch.Size([1, 1408])          0.312864             0.392675             1305.177600          3883.200000         
+model.layers.6.mlp.experts.37.down_proj       torch.Size([1, 2048])          0.375552             0.535965             1475.616000          3882.400000         
+model.layers.6.mlp.experts.40.gate_proj       torch.Size([1, 1408])          0.311488             0.521660             1615.411200          3881.600000         
+model.layers.6.mlp.experts.40.act_fn          torch.Size([1, 1408])          0.118432             0.217676             1708.608000          3881.600000         
+model.layers.6.mlp.experts.40.up_proj         torch.Size([1, 1408])          0.306272             0.475168             1786.272000          3881.600000         
+model.layers.6.mlp.experts.40.down_proj       torch.Size([1, 2048])          0.372128             0.540733             1940.800000          3880.800000         
+model.layers.6.mlp.experts.45.gate_proj       torch.Size([1, 1408])          0.315072             0.476599             1832.409600          3881.600000         
+model.layers.6.mlp.experts.45.act_fn          torch.Size([1, 1408])          0.160096             0.250101             1863.168000          3881.600000         
+model.layers.6.mlp.experts.45.up_proj         torch.Size([1, 1408])          0.302848             0.463963             1979.616000          3880.800000         
+model.layers.6.mlp.experts.45.down_proj       torch.Size([1, 2048])          0.375776             0.546932             2134.880000          3880.000000         
+model.layers.6.mlp.experts.52.gate_proj       torch.Size([1, 1408])          0.325984             0.473261             1801.651200          3881.600000         
+model.layers.6.mlp.experts.52.act_fn          torch.Size([1, 1408])          0.116672             0.208139             1863.168000          3881.600000         
+model.layers.6.mlp.experts.52.up_proj         torch.Size([1, 1408])          0.305312             0.430346             1956.326400          3881.600000         
+model.layers.6.mlp.experts.52.down_proj       torch.Size([1, 2048])          0.372768             0.581503             2173.696000          3880.000000         
+model.layers.6.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          0.835840             0.977278             1863.436800          3725.721600         
+model.layers.6.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.156800             0.252485             2328.960000          3724.800000         
+model.layers.6.mlp.shared_expert.up_proj      torch.Size([1, 5632])          0.764928             0.896931             2638.348800          3723.571200         
+model.layers.6.mlp.shared_expert.down_proj    torch.Size([1, 2048])          0.925280             1.055717             3319.065600          3721.420800         
+model.layers.6.mlp.shared_expert_gate         torch.Size([1, 1])             0.232736             0.323534             3837.232000          3758.944000         
+model.layers.7.input_layernorm                torch.Size([1, 1, 2048])       26.879232            27.023315            2592.040157          4233.844706         
+model.layers.7.self_attn.q_proj               torch.Size([1, 1, 2048])       17.694689            17.868519            1742.529306          3731.734857         
+model.layers.7.self_attn.k_proj               torch.Size([1, 1, 2048])       32.942242            33.097982            1520.949622          3141.552432         
+model.layers.7.self_attn.v_proj               torch.Size([1, 1, 2048])       14.368256            14.515162            1520.925737          3020.566303         
+model.layers.7.self_attn.o_proj               torch.Size([1, 1, 2048])       11.984736            12.183905            1127.762094          3024.109906         
+model.layers.7.post_attention_layernorm       torch.Size([1, 1, 2048])       7.055072             7.228613             731.370667           3451.955451         
+model.layers.7.mlp.experts.42.gate_proj       torch.Size([1, 1408])          116.218430           116.446257           621.850947           3042.817925         
+model.layers.7.mlp.experts.42.act_fn          torch.Size([1, 1408])          0.227008             0.349045             621.824000           3263.232000         
+model.layers.7.mlp.experts.42.up_proj         torch.Size([1, 1408])          109.970146           110.122681           626.430104           3091.900681         
+model.layers.7.mlp.experts.42.down_proj       torch.Size([1, 2048])          108.204544           108.328581           654.982118           3031.489412         
+model.layers.7.mlp.experts.50.gate_proj       torch.Size([1, 1408])          115.484322           115.686417           621.829908           3213.388800         
+model.layers.7.mlp.experts.50.act_fn          torch.Size([1, 1408])          0.186848             0.292778             621.824000           3418.624000         
+model.layers.7.mlp.experts.50.up_proj         torch.Size([1, 1408])          116.127998           116.278172           621.829774           3134.913925         
+model.layers.7.mlp.experts.50.down_proj       torch.Size([1, 2048])          118.284546           118.471622           658.611298           3059.261557         
+model.layers.7.mlp.experts.58.gate_proj       torch.Size([1, 1408])          118.643646           118.815184           621.858552           3003.397890         
+model.layers.7.mlp.experts.58.act_fn          torch.Size([1, 1408])          0.151232             0.320911             621.824000           3107.840000         
+model.layers.7.mlp.experts.58.up_proj         torch.Size([1, 1408])          118.737854           118.918419           621.835463           3124.466149         
+model.layers.7.mlp.experts.58.down_proj       torch.Size([1, 2048])          114.285439           114.455700           621.817081           3187.926919         
+model.layers.7.mlp.experts.59.gate_proj       torch.Size([1, 1408])          119.408508           119.575024           621.787429           3234.617034         
+model.layers.7.mlp.experts.59.act_fn          torch.Size([1, 1408])          0.200992             0.320673             621.568000           3727.872000         
+model.layers.7.mlp.experts.59.up_proj         torch.Size([1, 1408])          115.462494           115.611315           621.772800           3298.557714         
+model.layers.7.mlp.experts.59.down_proj       torch.Size([1, 2048])          110.701408           110.865116           620.901254           5769.980657         
+model.layers.7.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          435.534607           435.811758           680.108148           4840.933481         
+model.layers.7.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.196736             0.318527             776.640000           3727.872000         
+model.layers.7.mlp.shared_expert.up_proj      torch.Size([1, 5632])          452.604187           452.851772           675.678681           3056.145770         
+model.layers.7.mlp.shared_expert.down_proj    torch.Size([1, 2048])          445.308319           445.660591           682.811981           3034.956651         
+model.layers.7.mlp.shared_expert_gate         torch.Size([1, 1])             10.478720            10.702133            661.170983           3436.489763         
+model.layers.8.input_layernorm                torch.Size([1, 1, 2048])       7.099072             7.362366             546.549000           3302.946000         
+model.layers.8.self_attn.q_proj               torch.Size([1, 1, 2048])       166.652954           168.257713           565.190080           3008.529280         
+model.layers.8.self_attn.k_proj               torch.Size([1, 1, 2048])       171.243484           171.515465           621.861926           3125.494222         
+model.layers.8.self_attn.v_proj               torch.Size([1, 1, 2048])       170.070145           170.346022           621.751922           3322.816311         
+model.layers.8.self_attn.o_proj               torch.Size([1, 1, 2048])       166.145218           166.415691           681.100208           3210.477133         
+model.layers.8.post_attention_layernorm       torch.Size([1, 1, 2048])       8.500256             8.689880             665.268480           3362.598400         
+model.layers.8.mlp.experts.4.gate_proj        torch.Size([1, 1408])          112.404671           112.613440           621.818475           3299.005698         
+model.layers.8.mlp.experts.4.act_fn           torch.Size([1, 1408])          0.227264             0.336647             621.824000           3263.232000         
+model.layers.8.mlp.experts.4.up_proj          torch.Size([1, 1408])          112.204163           112.355947           621.847273           3097.634424         
+model.layers.8.mlp.experts.4.down_proj        torch.Size([1, 2048])          165.821884           166.099072           656.392533           3087.447230         
+model.layers.8.mlp.experts.8.gate_proj        torch.Size([1, 1408])          159.039581           159.222364           621.766194           3516.624103         
+model.layers.8.mlp.experts.8.act_fn           torch.Size([1, 1408])          0.263232             0.435829             621.824000           3263.232000         
+model.layers.8.mlp.experts.8.up_proj          torch.Size([1, 1408])          242.193573           242.377520           621.825896           3105.790578         
+model.layers.8.mlp.experts.8.down_proj        torch.Size([1, 2048])          157.903336           158.141613           633.494795           3179.536658         
+model.layers.8.mlp.experts.34.gate_proj       torch.Size([1, 1408])          115.770691           115.962505           621.896567           3032.543244         
+model.layers.8.mlp.experts.34.act_fn          torch.Size([1, 1408])          0.355776             0.539064             621.568000           3729.408000         
+model.layers.8.mlp.experts.34.up_proj         torch.Size([1, 1408])          112.346786           112.494230           621.814519           3431.285570         
+model.layers.8.mlp.experts.34.down_proj       torch.Size([1, 2048])          111.512573           111.700296           649.747248           3357.362526         
+model.layers.8.mlp.experts.43.gate_proj       torch.Size([1, 1408])          165.684708           165.955067           621.614362           3706.586709         
+model.layers.8.mlp.experts.43.act_fn          torch.Size([1, 1408])          0.195328             0.303268             621.568000           3574.016000         
+model.layers.8.mlp.experts.43.up_proj         torch.Size([1, 1408])          165.202118           165.356398           634.392000           3226.838588         
+model.layers.8.mlp.experts.43.down_proj       torch.Size([1, 2048])          176.127548           176.323175           668.931879           3141.060848         
+model.layers.8.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          454.979370           455.192327           656.770157           3016.621016         
+model.layers.8.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.261664             0.464201             776.960000           3572.544000         
+model.layers.8.mlp.shared_expert.up_proj      torch.Size([1, 5632])          394.097137           394.323587           683.484605           3051.644244         
+model.layers.8.mlp.shared_expert.down_proj    torch.Size([1, 2048])          458.777740           459.175587           693.173097           3257.596177         
+model.layers.8.mlp.shared_expert_gate         torch.Size([1, 1])             11.937792            12.241840            697.711020           3538.497306         
+model.layers.9.input_layernorm                torch.Size([1, 1, 2048])       9.943712             10.355473            597.438745           3419.452235         
+model.layers.9.self_attn.q_proj               torch.Size([1, 1, 2048])       175.969086           176.268816           572.090794           3095.322029         
+model.layers.9.self_attn.k_proj               torch.Size([1, 1, 2048])       166.742050           167.133570           621.889901           3066.182970         
+model.layers.9.self_attn.v_proj               torch.Size([1, 1, 2048])       169.921082           170.250416           621.867303           3160.060498         
+model.layers.9.self_attn.o_proj               torch.Size([1, 1, 2048])       164.076614           164.361000           694.494335           3403.411607         
+model.layers.9.post_attention_layernorm       torch.Size([1, 1, 2048])       9.562976             9.785652             671.486720           3418.624000         
+model.layers.9.mlp.experts.22.gate_proj       torch.Size([1, 1408])          180.199417           180.449009           621.990146           2856.761219         
+model.layers.9.mlp.experts.22.act_fn          torch.Size([1, 1408])          0.172352             0.276327             621.824000           3107.840000         
+model.layers.9.mlp.experts.22.up_proj         torch.Size([1, 1408])          154.855103           154.998064           621.852821           3195.598834         
+model.layers.9.mlp.experts.22.down_proj       torch.Size([1, 2048])          114.119133           114.279032           657.843014           3336.346899         
+model.layers.9.mlp.experts.23.gate_proj       torch.Size([1, 1408])          115.238525           115.411758           629.932606           3579.416242         
+model.layers.9.mlp.experts.23.act_fn          torch.Size([1, 1408])          0.186592             0.298023             621.824000           3263.232000         
+model.layers.9.mlp.experts.23.up_proj         torch.Size([1, 1408])          115.025124           115.177155           632.547176           3129.734351         
+model.layers.9.mlp.experts.23.down_proj       torch.Size([1, 2048])          112.152061           112.387419           671.298909           3097.596606         
+model.layers.9.mlp.experts.46.gate_proj       torch.Size([1, 1408])          118.246208           118.419647           621.966222           2977.049778         
+model.layers.9.mlp.experts.46.act_fn          torch.Size([1, 1408])          0.208320             0.322342             621.824000           3107.840000         
+model.layers.9.mlp.experts.46.up_proj         torch.Size([1, 1408])          113.759232           113.916636           652.063522           3013.455284         
+model.layers.9.mlp.experts.46.down_proj       torch.Size([1, 2048])          115.325279           115.574121           681.118779           3313.122687         
+model.layers.9.mlp.experts.48.gate_proj       torch.Size([1, 1408])          115.371521           115.535259           621.943688           2929.221818         
+model.layers.9.mlp.experts.48.act_fn          torch.Size([1, 1408])          0.188000             0.345469             621.824000           3107.840000         
+model.layers.9.mlp.experts.48.up_proj         torch.Size([1, 1408])          115.421890           115.567684           621.842773           3164.200960         
+model.layers.9.mlp.experts.48.down_proj       torch.Size([1, 2048])          108.872993           109.038115           651.865159           3250.766124         
+model.layers.9.mlp.shared_expert.gate_proj    torch.Size([1, 5632])          493.564636           493.843079           670.811719           3125.912816         
+model.layers.9.mlp.shared_expert.act_fn       torch.Size([1, 5632])          0.259776             0.444412             776.960000           3417.216000         
+model.layers.9.mlp.shared_expert.up_proj      torch.Size([1, 5632])          403.148987           403.420448           691.185363           2937.790852         
+model.layers.9.mlp.shared_expert.down_proj    torch.Size([1, 2048])          445.873230           446.435928           685.083281           3205.628018         
+model.layers.9.mlp.shared_expert_gate         torch.Size([1, 1])             8.861376             10.506392            685.741176           3308.843922         
+model.layers.10.input_layernorm               torch.Size([1, 1, 2048])       9.470528             10.873318            588.708571           3247.920000         
+model.layers.10.self_attn.q_proj              torch.Size([1, 1, 2048])       165.836197           167.273760           564.912850           3040.635362         
+model.layers.10.self_attn.k_proj              torch.Size([1, 1, 2048])       178.468735           178.750277           621.828763           3378.242679         
+model.layers.10.self_attn.v_proj              torch.Size([1, 1, 2048])       168.726654           168.967724           624.925588           3387.403578         
+model.layers.10.self_attn.o_proj              torch.Size([1, 1, 2048])       168.514404           168.811560           698.202947           3087.382456         
+model.layers.10.post_attention_layernorm      torch.Size([1, 1, 2048])       7.581472             7.837772             679.707608           3263.495529         
+model.layers.10.mlp.experts.52.gate_proj      torch.Size([1, 1408])          8.352160             8.553982             625.450182           3062.699152         
+model.layers.10.mlp.experts.52.act_fn         torch.Size([1, 1408])          0.149696             0.255108             699.552000           3263.232000         
+model.layers.10.mlp.experts.52.up_proj        torch.Size([1, 1408])          7.566432             7.722139             654.400992           3129.892217         
+model.layers.10.mlp.experts.52.down_proj      torch.Size([1, 2048])          7.740448             7.907391             687.775030           3117.498182         
+model.layers.10.mlp.experts.57.gate_proj      torch.Size([1, 1408])          7.892736             8.084536             621.878588           3142.853176         
+model.layers.10.mlp.experts.57.act_fn         torch.Size([1, 1408])          0.147840             0.282288             621.824000           3263.232000         
+model.layers.10.mlp.experts.57.up_proj        torch.Size([1, 1408])          7.439360             7.596493             621.840732           3291.134327         
+model.layers.10.mlp.experts.57.down_proj      torch.Size([1, 2048])          7.693952             7.860661             655.969455           3345.972848         
+model.layers.10.mlp.experts.58.gate_proj      torch.Size([1, 1408])          7.477952             7.655144             642.158377           3114.158377         
+model.layers.10.mlp.experts.58.act_fn         torch.Size([1, 1408])          0.178016             0.281334             777.280000           3263.232000         
+model.layers.10.mlp.experts.58.up_proj        torch.Size([1, 1408])          7.627328             7.786989             621.877809           3062.202293         
+model.layers.10.mlp.experts.58.down_proj      torch.Size([1, 2048])          7.624928             7.800102             660.440060           3061.722947         
+model.layers.10.mlp.experts.59.gate_proj      torch.Size([1, 1408])          7.436352             7.635832             660.167164           3050.489313         
+model.layers.10.mlp.experts.59.act_fn         torch.Size([1, 1408])          0.147872             0.333786             777.280000           3263.232000         
+model.layers.10.mlp.experts.59.up_proj        torch.Size([1, 1408])          7.415072             7.570505             645.083701           3102.689910         
+model.layers.10.mlp.experts.59.down_proj      torch.Size([1, 2048])          7.637536             7.832289             649.876211           3493.457323         
+model.layers.10.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          26.371777            26.560307            682.338418           2903.361280         
+model.layers.10.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.176096             0.308037             776.960000           3261.888000         
+model.layers.10.mlp.shared_expert.up_proj     torch.Size([1, 5632])          25.195936            25.368690            690.321522           3063.249077         
+model.layers.10.mlp.shared_expert.down_proj   torch.Size([1, 2048])          24.105951            24.295092            678.062507           3213.774080         
+model.layers.10.mlp.shared_expert_gate        torch.Size([1, 1])             5.148832             5.293846             670.187016           3271.201574         
+model.layers.11.input_layernorm               torch.Size([1, 1, 2048])       4.458848             4.597664             547.994413           3151.068444         
+model.layers.11.self_attn.q_proj              torch.Size([1, 1, 2048])       12.718912            12.899876            566.147107           3039.882252         
+model.layers.11.self_attn.k_proj              torch.Size([1, 1, 2048])       11.146944            11.342764            621.855683           3411.299168         
+model.layers.11.self_attn.v_proj              torch.Size([1, 1, 2048])       11.156896            11.349916            621.884832           3164.690693         
+model.layers.11.self_attn.o_proj              torch.Size([1, 1, 2048])       9.504192             9.702444             687.990805           3096.771678         
+model.layers.11.post_attention_layernorm      torch.Size([1, 1, 2048])       4.993696             5.134106             668.441600           3300.912640         
+model.layers.11.mlp.experts.11.gate_proj      torch.Size([1, 1408])          7.534848             7.727623             610.562560           3091.999147         
+model.layers.11.mlp.experts.11.act_fn         torch.Size([1, 1408])          0.178656             0.287771             621.824000           3574.016000         
+model.layers.11.mlp.experts.11.up_proj        torch.Size([1, 1408])          7.435840             7.593393             621.853605           3356.678966         
+model.layers.11.mlp.experts.11.down_proj      torch.Size([1, 2048])          7.559904             7.730484             644.019200           3437.644343         
+model.layers.11.mlp.experts.28.gate_proj      torch.Size([1, 1408])          7.325952             7.506609             621.957647           3032.304000         
+model.layers.11.mlp.experts.28.act_fn         torch.Size([1, 1408])          0.143840             0.245810             725.461333           3263.232000         
+model.layers.11.mlp.experts.28.up_proj        torch.Size([1, 1408])          7.504448             7.696152             642.771248           3474.845835         
+model.layers.11.mlp.experts.28.down_proj      torch.Size([1, 2048])          7.588928             7.788181             675.590737           3375.475489         
+model.layers.11.mlp.experts.49.gate_proj      torch.Size([1, 1408])          7.497536             7.669926             635.930947           3128.565895         
+model.layers.11.mlp.experts.49.act_fn         torch.Size([1, 1408])          0.148544             0.256777             777.280000           3263.232000         
+model.layers.11.mlp.experts.49.up_proj        torch.Size([1, 1408])          7.432928             7.578373             659.582061           3094.575515         
+model.layers.11.mlp.experts.49.down_proj      torch.Size([1, 2048])          7.640896             7.814884             678.070646           3097.749169         
+model.layers.11.mlp.experts.54.gate_proj      torch.Size([1, 1408])          7.294464             7.454157             631.106370           3247.794252         
+model.layers.11.mlp.experts.54.act_fn         torch.Size([1, 1408])          0.147104             0.250816             777.280000           3263.232000         
+model.layers.11.mlp.experts.54.up_proj        torch.Size([1, 1408])          9.182464             9.324074             655.519045           3166.467343         
+model.layers.11.mlp.experts.54.down_proj      torch.Size([1, 2048])          7.512608             7.668495             683.586443           3127.609649         
+model.layers.11.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          27.950912            28.116703            676.831573           2920.880071         
+model.layers.11.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.187168             0.383615             776.960000           3417.216000         
+model.layers.11.mlp.shared_expert.up_proj     torch.Size([1, 5632])          23.811392            23.967266            691.740632           3051.667509         
+model.layers.11.mlp.shared_expert.down_proj   torch.Size([1, 2048])          24.112896            24.313688            699.016893           3027.136437         
+model.layers.11.mlp.shared_expert_gate        torch.Size([1, 1])             5.177024             5.327940             688.350041           3418.480327         
+model.layers.12.input_layernorm               torch.Size([1, 1, 2048])       4.491680             4.636288             615.751680           3419.975680         
+model.layers.12.self_attn.q_proj              torch.Size([1, 1, 2048])       12.696256            12.873173            572.004898           3227.205878         
+model.layers.12.self_attn.k_proj              torch.Size([1, 1, 2048])       11.327072            11.495829            621.719219           3686.599442         
+model.layers.12.self_attn.v_proj              torch.Size([1, 1, 2048])       11.613184            11.792660            621.870545           3368.978327         
+model.layers.12.self_attn.o_proj              torch.Size([1, 1, 2048])       9.993792             10.200977            698.738545           3129.621455         
+model.layers.12.post_attention_layernorm      torch.Size([1, 1, 2048])       5.112448             5.241632             674.689280           3310.453760         
+model.layers.12.mlp.experts.27.gate_proj      torch.Size([1, 1408])          7.406304             7.617474             748.306824           3528.312471         
+model.layers.12.mlp.experts.27.act_fn         torch.Size([1, 1408])          0.145760             0.253439             777.280000           3574.016000         
+model.layers.12.mlp.experts.27.up_proj        torch.Size([1, 1408])          7.403072             7.554770             776.997647           3818.460863         
+model.layers.12.mlp.experts.27.down_proj      torch.Size([1, 2048])          7.580800             7.819414             777.131089           3534.014099         
+model.layers.12.mlp.experts.39.gate_proj      torch.Size([1, 1408])          7.406272             7.581234             739.970560           3418.624000         
+model.layers.12.mlp.experts.39.act_fn         torch.Size([1, 1408])          0.148224             0.254393             777.280000           3418.624000         
+model.layers.12.mlp.experts.39.up_proj        torch.Size([1, 1408])          7.444192             7.590294             777.280000           3418.624000         
+model.layers.12.mlp.experts.39.down_proj      torch.Size([1, 2048])          7.754784             7.923365             777.280000           3367.852356         
+model.layers.12.mlp.experts.40.gate_proj      torch.Size([1, 1408])          7.503616             7.715702             777.241600           3381.255040         
+model.layers.12.mlp.experts.40.act_fn         torch.Size([1, 1408])          0.156448             0.271082             776.960000           3727.872000         
+model.layers.12.mlp.experts.40.up_proj        torch.Size([1, 1408])          7.288320             7.444143             776.960000           3747.088475         
+model.layers.12.mlp.experts.40.down_proj      torch.Size([1, 2048])          7.629600             7.883310             776.960000           3619.362263         
+model.layers.12.mlp.experts.58.gate_proj      torch.Size([1, 1408])          177.838120           178.063393           694.137030           3504.781941         
+model.layers.12.mlp.experts.58.act_fn         torch.Size([1, 1408])          0.294176             0.488043             777.280000           3418.624000         
+model.layers.12.mlp.experts.58.up_proj        torch.Size([1, 1408])          150.184219           150.580645           777.280000           3418.624000         
+model.layers.12.mlp.experts.58.down_proj      torch.Size([1, 2048])          154.696350           154.964209           772.272980           3561.192490         
+model.layers.12.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          630.943176           631.225586           776.993223           3422.431796         
+model.layers.12.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.322240             0.566721             776.960000           3417.216000         
+model.layers.12.mlp.shared_expert.up_proj     torch.Size([1, 5632])          520.531738           520.772934           776.919748           3609.151799         
+model.layers.12.mlp.shared_expert.down_proj   torch.Size([1, 2048])          450.691010           451.140404           776.960000           3420.970667         
+model.layers.12.mlp.shared_expert_gate        torch.Size([1, 1])             9.314336             10.984182            669.780945           3339.480436         
+model.layers.13.input_layernorm               torch.Size([1, 1, 2048])       10.170560            11.743784            556.501760           3863.260160         
+model.layers.13.self_attn.q_proj              torch.Size([1, 1, 2048])       161.734909           163.128614           612.679529           3402.528209         
+model.layers.13.self_attn.k_proj              torch.Size([1, 1, 2048])       168.713379           169.006348           651.935785           3669.829154         
+model.layers.13.self_attn.v_proj              torch.Size([1, 1, 2048])       196.292007           196.528673           683.179789           3467.695158         
+model.layers.13.self_attn.o_proj              torch.Size([1, 1, 2048])       136.224930           136.503458           774.642286           3391.492063         
+model.layers.13.post_attention_layernorm      torch.Size([1, 1, 2048])       9.282656             9.485960             683.980800           3275.985920         
+model.layers.13.mlp.experts.16.gate_proj      torch.Size([1, 1408])          121.280449           121.485949           652.915200           3263.232000         
+model.layers.13.mlp.experts.16.act_fn         torch.Size([1, 1408])          0.404960             0.683784             777.280000           3263.232000         
+model.layers.13.mlp.experts.16.up_proj        torch.Size([1, 1408])          119.037155           119.279861           772.616320           3263.232000         
+model.layers.13.mlp.experts.16.down_proj      torch.Size([1, 2048])          112.896156           113.071203           777.134257           3472.382099         
+model.layers.13.mlp.experts.42.gate_proj      torch.Size([1, 1408])          117.352577           117.543221           621.987765           2993.671059         
+model.layers.13.mlp.experts.42.act_fn         torch.Size([1, 1408])          0.236800             0.398159             621.824000           3263.232000         
+model.layers.13.mlp.experts.42.up_proj        torch.Size([1, 1408])          113.106621           113.280535           621.988153           3016.543267         
+model.layers.13.mlp.experts.42.down_proj      torch.Size([1, 2048])          115.707138           115.882874           622.028800           2942.611576         
+model.layers.13.mlp.experts.52.gate_proj      torch.Size([1, 1408])          116.535713           116.713524           621.870195           3289.666406         
+model.layers.13.mlp.experts.52.act_fn         torch.Size([1, 1408])          0.206528             0.324249             621.824000           3729.408000         
+model.layers.13.mlp.experts.52.up_proj        torch.Size([1, 1408])          115.432739           115.584612           621.892397           3288.728916         
+model.layers.13.mlp.experts.52.down_proj      torch.Size([1, 2048])          109.354431           109.526634           633.641383           3047.101594         
+model.layers.13.mlp.experts.55.gate_proj      torch.Size([1, 1408])          126.374718           126.558065           622.035799           2951.459914         
+model.layers.13.mlp.experts.55.act_fn         torch.Size([1, 1408])          0.182656             0.283241             621.824000           3109.120000         
+model.layers.13.mlp.experts.55.up_proj        torch.Size([1, 1408])          118.311966           118.456602           621.992770           2976.656593         
+model.layers.13.mlp.experts.55.down_proj      torch.Size([1, 2048])          128.858276           129.021883           628.696403           2953.654791         
+model.layers.13.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          464.883698           465.180874           654.210478           2841.210314         
+model.layers.13.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.188768             0.304937             776.960000           3494.880000         
+model.layers.13.mlp.shared_expert.up_proj     torch.Size([1, 5632])          452.155457           452.414751           682.997719           3127.912688         
+model.layers.13.mlp.shared_expert.down_proj   torch.Size([1, 2048])          451.566895           451.915264           653.770885           2910.579279         
+model.layers.13.mlp.shared_expert_gate        torch.Size([1, 1])             10.428160            10.654211            663.042000           3498.657000         
+model.layers.14.input_layernorm               torch.Size([1, 1, 2048])       7.445536             7.676125             540.137544           3528.750035         
+model.layers.14.self_attn.q_proj              torch.Size([1, 1, 2048])       119.873985           120.122671           570.137462           3187.916731         
+model.layers.14.self_attn.k_proj              torch.Size([1, 1, 2048])       150.591232           150.911808           621.962779           3047.028547         
+model.layers.14.self_attn.v_proj              torch.Size([1, 1, 2048])       148.648285           148.865938           621.999761           2990.894488         
+model.layers.14.self_attn.o_proj              torch.Size([1, 1, 2048])       149.820709           150.151491           679.897751           3092.045254         
+model.layers.14.post_attention_layernorm      torch.Size([1, 1, 2048])       10.006592            10.222673            655.254588           3741.797647         
+model.layers.14.mlp.experts.8.gate_proj       torch.Size([1, 1408])          157.316025           157.512426           621.986198           3102.878290         
+model.layers.14.mlp.experts.8.act_fn          torch.Size([1, 1408])          0.239104             0.382423             621.824000           3418.624000         
+model.layers.14.mlp.experts.8.up_proj         torch.Size([1, 1408])          171.708160           171.839237           621.913600           3316.263200         
+model.layers.14.mlp.experts.8.down_proj       torch.Size([1, 2048])          152.596390           152.880430           621.908060           3211.906866         
+model.layers.14.mlp.experts.46.gate_proj      torch.Size([1, 1408])          158.985352           159.156322           621.999650           3046.768117         
+model.layers.14.mlp.experts.46.act_fn         torch.Size([1, 1408])          0.173088             0.286579             621.824000           3418.624000         
+model.layers.14.mlp.experts.46.up_proj        torch.Size([1, 1408])          142.969635           143.147469           621.802338           3462.192738         
+model.layers.14.mlp.experts.46.down_proj      torch.Size([1, 2048])          159.227386           159.407854           639.077926           3505.286637         
+model.layers.14.mlp.experts.50.gate_proj      torch.Size([1, 1408])          116.258430           116.609812           606.134599           3231.787028         
+model.layers.14.mlp.experts.50.act_fn         torch.Size([1, 1408])          0.248832             0.370502             621.824000           3418.624000         
+model.layers.14.mlp.experts.50.up_proj        torch.Size([1, 1408])          109.465729           109.675169           621.964511           3135.972090         
+model.layers.14.mlp.experts.50.down_proj      torch.Size([1, 2048])          107.876259           108.083963           650.156606           3274.365091         
+model.layers.14.mlp.experts.51.gate_proj      torch.Size([1, 1408])          113.381348           113.608122           630.055940           3455.146346         
+model.layers.14.mlp.experts.51.act_fn         torch.Size([1, 1408])          0.149248             0.323296             621.824000           3729.408000         
+model.layers.14.mlp.experts.51.up_proj        torch.Size([1, 1408])          110.422272           110.617638           621.880672           3407.368305         
+model.layers.14.mlp.experts.51.down_proj      torch.Size([1, 2048])          116.001282           116.301298           646.245731           3238.535642         
+model.layers.14.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          381.277740           381.569386           641.761493           3149.491408         
+model.layers.14.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.216480             0.426054             776.960000           3727.872000         
+model.layers.14.mlp.shared_expert.up_proj     torch.Size([1, 5632])          451.639313           451.861858           703.212079           3068.333210         
+model.layers.14.mlp.shared_expert.down_proj   torch.Size([1, 2048])          445.424164           445.704699           688.458240           3213.950436         
+model.layers.14.mlp.shared_expert_gate        torch.Size([1, 1])             9.039168             9.234190             656.992000           3284.084645         
+model.layers.15.input_layernorm               torch.Size([1, 1, 2048])       7.382592             7.611275             551.655849           3141.651321         
+model.layers.15.self_attn.q_proj              torch.Size([1, 1, 2048])       169.633148           171.259165           564.749576           3016.237899         
+model.layers.15.self_attn.k_proj              torch.Size([1, 1, 2048])       171.568100           171.888590           621.926902           3394.965647         
+model.layers.15.self_attn.v_proj              torch.Size([1, 1, 2048])       171.992218           172.311306           621.999291           3120.016394         
+model.layers.15.self_attn.o_proj              torch.Size([1, 1, 2048])       166.595001           166.900158           682.945455           2995.079273         
+model.layers.15.post_attention_layernorm      torch.Size([1, 1, 2048])       10.471904            10.746002            659.261440           3108.889600         
+model.layers.15.mlp.experts.29.gate_proj      torch.Size([1, 1408])          122.139198           122.366428           623.082044           3240.458745         
+model.layers.15.mlp.experts.29.act_fn         torch.Size([1, 1408])          0.171712             0.365496             621.824000           3574.016000         
+model.layers.15.mlp.experts.29.up_proj        torch.Size([1, 1408])          115.987907           116.181135           637.490109           3553.537984         
+model.layers.15.mlp.experts.29.down_proj      torch.Size([1, 2048])          114.346786           114.623547           672.972418           3174.951642         
+model.layers.15.mlp.experts.41.gate_proj      torch.Size([1, 1408])          120.538658           120.743275           621.988299           3131.070090         
+model.layers.15.mlp.experts.41.act_fn         torch.Size([1, 1408])          0.162240             0.275135             621.824000           3263.232000         
+model.layers.15.mlp.experts.41.up_proj        torch.Size([1, 1408])          117.303391           117.520094           635.905910           3117.140537         
+model.layers.15.mlp.experts.41.down_proj      torch.Size([1, 2048])          111.180481           111.348867           679.245955           3035.487759         
+model.layers.15.mlp.experts.46.gate_proj      torch.Size([1, 1408])          110.704224           110.889912           622.030769           3060.172308         
+model.layers.15.mlp.experts.46.act_fn         torch.Size([1, 1408])          0.174560             0.293970             621.824000           3264.576000         
+model.layers.15.mlp.experts.46.up_proj        torch.Size([1, 1408])          112.504387           112.742901           649.050667           3120.713697         
+model.layers.15.mlp.experts.46.down_proj      torch.Size([1, 2048])          110.598175           110.799074           683.413493           3252.337672         
+model.layers.15.mlp.experts.55.gate_proj      torch.Size([1, 1408])          164.792770           164.965391           623.177882           3023.604706         
+model.layers.15.mlp.experts.55.act_fn         torch.Size([1, 1408])          0.250912             0.375509             621.824000           3264.576000         
+model.layers.15.mlp.experts.55.up_proj        torch.Size([1, 1408])          153.951614           154.155731           634.827549           3120.531248         
+model.layers.15.mlp.experts.55.down_proj      torch.Size([1, 2048])          147.648773           147.911549           664.855403           3268.673910         
+model.layers.15.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          416.173431           416.527748           665.608505           3172.173550         
+model.layers.15.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.344864             0.577927             776.960000           3418.624000         
+model.layers.15.mlp.shared_expert.up_proj     torch.Size([1, 5632])          437.272247           437.539339           672.024721           2873.824275         
+model.layers.15.mlp.shared_expert.down_proj   torch.Size([1, 2048])          443.901672           444.142342           689.434241           3156.319927         
+model.layers.15.mlp.shared_expert_gate        torch.Size([1, 1])             10.131520            10.355234            681.285647           3314.118588         
+model.layers.16.input_layernorm               torch.Size([1, 1, 2048])       11.673280            11.846781            584.842817           3129.413408         
+model.layers.16.self_attn.q_proj              torch.Size([1, 1, 2048])       169.356445           169.584751           554.255225           3039.659137         
+model.layers.16.self_attn.k_proj              torch.Size([1, 1, 2048])       176.320419           176.628828           621.910178           3383.085624         
+model.layers.16.self_attn.v_proj              torch.Size([1, 1, 2048])       168.130630           168.375492           621.896953           3342.140021         
+model.layers.16.self_attn.o_proj              torch.Size([1, 1, 2048])       158.017563           158.424854           690.933775           3078.497704         
+model.layers.16.post_attention_layernorm      torch.Size([1, 1, 2048])       16.710239            18.138409            674.776320           3264.199680         
+model.layers.16.mlp.experts.3.gate_proj       torch.Size([1, 1408])          116.415138           116.592884           621.994667           3204.923111         
+model.layers.16.mlp.experts.3.act_fn          torch.Size([1, 1408])          0.190784             0.294924             621.568000           4193.856000         
+model.layers.16.mlp.experts.3.up_proj         torch.Size([1, 1408])          110.482780           110.631227           621.822359           3657.876103         
+model.layers.16.mlp.experts.3.down_proj       torch.Size([1, 2048])          105.743073           105.892897           654.603549           3238.441383         
+model.layers.16.mlp.experts.40.gate_proj      torch.Size([1, 1408])          116.592575           116.821766           643.189333           3117.200970         
+model.layers.16.mlp.experts.40.act_fn         torch.Size([1, 1408])          0.195744             0.304222             777.280000           3263.232000         
+model.layers.16.mlp.experts.40.up_proj        torch.Size([1, 1408])          115.012001           115.161657           634.536376           3020.426309         
+model.layers.16.mlp.experts.40.down_proj      torch.Size([1, 2048])          106.384445           106.539488           648.064901           3591.812507         
+model.layers.16.mlp.experts.48.gate_proj      torch.Size([1, 1408])          112.730621           112.896681           646.933489           3227.081343         
+model.layers.16.mlp.experts.48.act_fn         torch.Size([1, 1408])          0.205568             0.310421             777.280000           3264.576000         
+model.layers.16.mlp.experts.48.up_proj        torch.Size([1, 1408])          109.517342           109.664440           671.844776           3149.724179         
+model.layers.16.mlp.experts.48.down_proj      torch.Size([1, 2048])          109.599037           109.755993           685.100271           3091.466105         
+model.layers.16.mlp.experts.57.gate_proj      torch.Size([1, 1408])          120.823135           121.094465           640.286118           3146.948235         
+model.layers.16.mlp.experts.57.act_fn         torch.Size([1, 1408])          0.222496             0.380516             777.280000           3264.576000         
+model.layers.16.mlp.experts.57.up_proj        torch.Size([1, 1408])          117.320259           117.472649           662.883609           3112.626526         
+model.layers.16.mlp.experts.57.down_proj      torch.Size([1, 2048])          107.282623           107.553005           691.440000           3117.349818         
+model.layers.16.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          618.700256           619.019985           673.525020           3025.641463         
+model.layers.16.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.541536             0.882864             776.960000           3883.200000         
+model.layers.16.mlp.shared_expert.up_proj     torch.Size([1, 5632])          633.868469           634.191751           698.193188           3269.874585         
+model.layers.16.mlp.shared_expert.down_proj   torch.Size([1, 2048])          566.493835           566.706896           690.560703           3092.233143         
+model.layers.16.mlp.shared_expert_gate        torch.Size([1, 1])             9.363616             9.529114             684.523789           3492.400281         
+model.layers.17.input_layernorm               torch.Size([1, 1, 2048])       7.600192             7.793188             591.453714           3633.470857         
+model.layers.17.self_attn.q_proj              torch.Size([1, 1, 2048])       233.173950           234.866142           566.479266           3083.310385         
+model.layers.17.self_attn.k_proj              torch.Size([1, 1, 2048])       234.504868           236.224890           629.146182           3029.400566         
+model.layers.17.self_attn.v_proj              torch.Size([1, 1, 2048])       227.102310           227.419376           623.560597           3175.428139         
+model.layers.17.self_attn.o_proj              torch.Size([1, 1, 2048])       235.460190           235.942602           693.407264           3281.158989         
+model.layers.17.post_attention_layernorm      torch.Size([1, 1, 2048])       11.139008            12.557030            677.776640           3639.928320         
+model.layers.17.mlp.experts.5.gate_proj       torch.Size([1, 1408])          111.868866           112.056971           633.372964           3049.213664         
+model.layers.17.mlp.experts.5.act_fn          torch.Size([1, 1408])          0.197248             0.334501             777.280000           3264.576000         
+model.layers.17.mlp.experts.5.up_proj         torch.Size([1, 1408])          115.296318           115.504265           657.969194           3068.515821         
+model.layers.17.mlp.experts.5.down_proj       torch.Size([1, 2048])          112.355843           112.541437           685.082947           3146.176481         
+model.layers.17.mlp.experts.38.gate_proj      torch.Size([1, 1408])          124.822304           125.066280           653.321075           3100.908896         
+model.layers.17.mlp.experts.38.act_fn         torch.Size([1, 1408])          0.164160             0.263691             777.280000           3263.232000         
+model.layers.17.mlp.experts.38.up_proj        torch.Size([1, 1408])          121.365891           121.547937           673.291549           3236.028632         
+model.layers.17.mlp.experts.38.down_proj      torch.Size([1, 2048])          114.411362           114.551306           673.422270           3069.868108         
+model.layers.17.mlp.experts.45.gate_proj      torch.Size([1, 1408])          106.556770           106.749296           644.026746           3111.440239         
+model.layers.17.mlp.experts.45.act_fn         torch.Size([1, 1408])          0.159456             0.262499             777.280000           3264.576000         
+model.layers.17.mlp.experts.45.up_proj        torch.Size([1, 1408])          117.400192           117.585659           674.562406           3076.392421         
+model.layers.17.mlp.experts.45.down_proj      torch.Size([1, 2048])          115.662979           115.838766           687.696246           3155.473231         
+model.layers.17.mlp.experts.50.gate_proj      torch.Size([1, 1408])          120.733597           120.972395           621.981131           3188.133959         
+model.layers.17.mlp.experts.50.act_fn         torch.Size([1, 1408])          0.169728             0.281811             621.824000           3419.328000         
+model.layers.17.mlp.experts.50.up_proj        torch.Size([1, 1408])          117.016418           117.199183           621.970286           3156.306683         
+model.layers.17.mlp.experts.50.down_proj      torch.Size([1, 2048])          102.777954           102.999210           662.481723           3532.179692         
+model.layers.17.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          455.377838           455.589056           640.792500           3051.766500         
+model.layers.17.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.220768             0.370026             776.960000           3418.624000         
+model.layers.17.mlp.shared_expert.up_proj     torch.Size([1, 5632])          440.571442           440.829992           690.520458           3135.846664         
+model.layers.17.mlp.shared_expert.down_proj   torch.Size([1, 2048])          450.168030           450.449944           695.394776           2947.341589         
+model.layers.17.mlp.shared_expert_gate        torch.Size([1, 1])             10.407872            10.617495            693.878634           3263.822049         
+model.layers.18.input_layernorm               torch.Size([1, 1, 2048])       9.975328             10.283709            587.865600           3264.576000         
+model.layers.18.self_attn.q_proj              torch.Size([1, 1, 2048])       164.769821           165.032864           570.681191           3335.062809         
+model.layers.18.self_attn.k_proj              torch.Size([1, 1, 2048])       170.851715           171.084166           622.034667           3199.997667         
+model.layers.18.self_attn.v_proj              torch.Size([1, 1, 2048])       166.146561           166.377306           622.009030           3093.149465         
+model.layers.18.self_attn.o_proj              torch.Size([1, 1, 2048])       169.778183           170.005798           672.395294           2855.570196         
+model.layers.18.post_attention_layernorm      torch.Size([1, 1, 2048])       8.633856             8.825779             655.322353           3677.841569         
+model.layers.18.mlp.experts.26.gate_proj      torch.Size([1, 1408])          87.358658            87.586403            622.045405           3095.457730         
+model.layers.18.mlp.experts.26.act_fn         torch.Size([1, 1408])          0.197600             0.305176             621.824000           3884.800000         
+model.layers.18.mlp.experts.26.up_proj        torch.Size([1, 1408])          85.707230            85.888863            631.527724           3555.223393         
+model.layers.18.mlp.experts.26.down_proj      torch.Size([1, 2048])          115.259811           115.446806           677.654962           3541.282198         
+model.layers.18.mlp.experts.29.gate_proj      torch.Size([1, 1408])          116.811005           116.989136           621.924324           3462.918486         
+model.layers.18.mlp.experts.29.act_fn         torch.Size([1, 1408])          0.196512             0.302553             621.824000           3420.032000         
+model.layers.18.mlp.experts.29.up_proj        torch.Size([1, 1408])          109.592796           109.765053           648.861353           3188.601263         
+model.layers.18.mlp.experts.29.down_proj      torch.Size([1, 2048])          108.267426           108.441591           682.055758           3105.632970         
+model.layers.18.mlp.experts.40.gate_proj      torch.Size([1, 1408])          174.905182           175.090313           623.135278           3330.738526         
+model.layers.18.mlp.experts.40.act_fn         torch.Size([1, 1408])          0.288864             0.408411             699.552000           3574.016000         
+model.layers.18.mlp.experts.40.up_proj        torch.Size([1, 1408])          155.296387           155.449867           650.746785           3241.437867         
+model.layers.18.mlp.experts.40.down_proj      torch.Size([1, 2048])          146.958115           147.178888           683.710118           3106.833882         
+model.layers.18.mlp.experts.55.gate_proj      torch.Size([1, 1408])          121.472000           121.706247           622.078390           3127.788277         
+model.layers.18.mlp.experts.55.act_fn         torch.Size([1, 1408])          0.193760             0.302792             622.080000           3264.576000         
+model.layers.18.mlp.experts.55.up_proj        torch.Size([1, 1408])          117.921570           118.074417           621.923765           3382.647059         
+model.layers.18.mlp.experts.55.down_proj      torch.Size([1, 2048])          117.861374           118.076563           671.497275           3217.222493         
+model.layers.18.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          446.755341           447.105408           663.752373           2975.092789         
+model.layers.18.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.598560             0.841379             777.280000           3340.928000         
+model.layers.18.mlp.shared_expert.up_proj     torch.Size([1, 5632])          445.550262           445.781231           685.937199           2987.389259         
+model.layers.18.mlp.shared_expert.down_proj   torch.Size([1, 2048])          442.115204           442.462921           699.238148           3200.403004         
+model.layers.18.mlp.shared_expert_gate        torch.Size([1, 1])             10.048512            10.281801            668.677079           3514.982603         
+model.layers.19.input_layernorm               torch.Size([1, 1, 2048])       8.224224             8.481979             575.621731           3577.808239         
+model.layers.19.self_attn.q_proj              torch.Size([1, 1, 2048])       167.866272           168.156385           565.522786           3329.429652         
+model.layers.19.self_attn.k_proj              torch.Size([1, 1, 2048])       174.270554           174.501896           640.578333           3329.636667         
+model.layers.19.self_attn.v_proj              torch.Size([1, 1, 2048])       171.461594           171.720982           635.754562           3175.089182         
+model.layers.19.self_attn.o_proj              torch.Size([1, 1, 2048])       165.337280           165.620565           700.591448           3101.704092         
+model.layers.19.post_attention_layernorm      torch.Size([1, 1, 2048])       7.830912             8.017778             670.776471           3264.312471         
+model.layers.19.mlp.experts.35.gate_proj      torch.Size([1, 1408])          115.023773           115.221024           644.209083           3168.776662         
+model.layers.19.mlp.experts.35.act_fn         torch.Size([1, 1408])          0.163744             0.329733             777.280000           3264.576000         
+model.layers.19.mlp.experts.35.up_proj        torch.Size([1, 1408])          110.460289           110.616446           663.750687           3159.049552         
+model.layers.19.mlp.experts.35.down_proj      torch.Size([1, 2048])          105.140480           105.315447           678.839186           3115.671377         
+model.layers.19.mlp.experts.43.gate_proj      torch.Size([1, 1408])          118.887421           119.141102           638.114462           3140.979916         
+model.layers.19.mlp.experts.43.act_fn         torch.Size([1, 1408])          0.168320             0.279427             777.280000           3263.232000         
+model.layers.19.mlp.experts.43.up_proj        torch.Size([1, 1408])          100.813538           100.987434           669.131378           3108.891022         
+model.layers.19.mlp.experts.43.down_proj      torch.Size([1, 2048])          105.874046           106.004000           696.064985           3099.274831         
+model.layers.19.mlp.experts.52.gate_proj      torch.Size([1, 1408])          165.738434           165.910721           644.059224           3076.832000         
+model.layers.19.mlp.experts.52.act_fn         torch.Size([1, 1408])          0.166080             0.264645             777.280000           3264.576000         
+model.layers.19.mlp.experts.52.up_proj        torch.Size([1, 1408])          153.845474           154.308558           665.392000           3128.552000         
+model.layers.19.mlp.experts.52.down_proj      torch.Size([1, 2048])          141.339615           141.503334           687.193405           3140.904061         
+model.layers.19.mlp.experts.55.gate_proj      torch.Size([1, 1408])          144.622528           144.834757           622.078348           3030.995406         
+model.layers.19.mlp.experts.55.act_fn         torch.Size([1, 1408])          0.233120             0.388384             622.080000           3109.120000         
+model.layers.19.mlp.experts.55.up_proj        torch.Size([1, 1408])          144.695709           144.864321           621.968772           3093.195476         
+model.layers.19.mlp.experts.55.down_proj      torch.Size([1, 2048])          153.280289           153.473616           641.940324           3141.490162         
+model.layers.19.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          463.780182           464.055300           671.073004           3089.562834         
+model.layers.19.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.334368             0.629902             777.280000           3263.232000         
+model.layers.19.mlp.shared_expert.up_proj     torch.Size([1, 5632])          442.768738           443.069220           654.590733           2922.558479         
+model.layers.19.mlp.shared_expert.down_proj   torch.Size([1, 2048])          436.467072           436.753511           694.793684           3196.427088         
+model.layers.19.mlp.shared_expert_gate        torch.Size([1, 1])             9.370784             9.566784             675.502345           3331.024552         
+model.layers.20.input_layernorm               torch.Size([1, 1, 2048])       13.428960            13.624191            567.049846           3246.200123         
+model.layers.20.self_attn.q_proj              torch.Size([1, 1, 2048])       169.161758           169.380903           565.893467           2988.100503         
+model.layers.20.self_attn.k_proj              torch.Size([1, 1, 2048])       160.525085           160.750151           626.644060           3172.929910         
+model.layers.20.self_attn.v_proj              torch.Size([1, 1, 2048])       173.109497           173.339367           622.004706           3279.497412         
+model.layers.20.self_attn.o_proj              torch.Size([1, 1, 2048])       156.861343           157.136440           691.680736           3119.813149         
+model.layers.20.post_attention_layernorm      torch.Size([1, 1, 2048])       13.303904            13.562679            677.941760           3264.387840         
+model.layers.20.mlp.experts.2.gate_proj       torch.Size([1, 1408])          132.226944           132.470369           627.859582           3054.786866         
+model.layers.20.mlp.experts.2.act_fn          torch.Size([1, 1408])          0.282112             0.449657             777.280000           3264.576000         
+model.layers.20.mlp.experts.2.up_proj         torch.Size([1, 1408])          83.947426            84.153891            648.338353           3068.167059         
+model.layers.20.mlp.experts.2.down_proj       torch.Size([1, 2048])          104.352867           104.507685           671.368727           3310.004848         
+model.layers.20.mlp.experts.17.gate_proj      torch.Size([1, 1408])          86.786911            87.020159            621.979307           3294.532267         
+model.layers.20.mlp.experts.17.act_fn         torch.Size([1, 1408])          0.180384             0.349760             621.824000           3264.576000         
+model.layers.20.mlp.experts.17.up_proj        torch.Size([1, 1408])          99.622627            99.813223            651.024716           3117.331582         
+model.layers.20.mlp.experts.17.down_proj      torch.Size([1, 2048])          105.019775           105.192423           688.944584           3092.202511         
+model.layers.20.mlp.experts.50.gate_proj      torch.Size([1, 1408])          119.000099           119.205713           643.034466           3289.949835         
+model.layers.20.mlp.experts.50.act_fn         torch.Size([1, 1408])          0.213472             0.344276             777.280000           3729.408000         
+model.layers.20.mlp.experts.50.up_proj        torch.Size([1, 1408])          114.847939           115.008354           671.128863           3328.082417         
+model.layers.20.mlp.experts.50.down_proj      torch.Size([1, 2048])          105.288284           105.490685           701.484752           3127.821474         
+model.layers.20.mlp.experts.58.gate_proj      torch.Size([1, 1408])          94.289665            94.550371            621.841297           3606.400000         
+model.layers.20.mlp.experts.58.act_fn         torch.Size([1, 1408])          0.157664             0.288010             621.824000           3418.624000         
+model.layers.20.mlp.experts.58.up_proj        torch.Size([1, 1408])          100.814980           100.960732           622.011200           3233.542000         
+model.layers.20.mlp.experts.58.down_proj      torch.Size([1, 2048])          110.870369           111.037493           675.360478           3133.378388         
+model.layers.20.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          462.680908           462.960720           670.203218           3063.951051         
+model.layers.20.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.213984             0.369787             777.280000           3418.624000         
+model.layers.20.mlp.shared_expert.up_proj     torch.Size([1, 5632])          638.181030           638.373613           649.685728           5943.026436         
+model.layers.20.mlp.shared_expert.down_proj   torch.Size([1, 2048])          609.142029           609.402657           674.585973           3939.962978         
+model.layers.20.mlp.shared_expert_gate        torch.Size([1, 1])             9.165920             9.380817             678.045793           3555.331310         
+model.layers.21.input_layernorm               torch.Size([1, 1, 2048])       9.948032             11.641026            539.527837           3575.488000         
+model.layers.21.self_attn.q_proj              torch.Size([1, 1, 2048])       234.889053           236.262083           569.936640           3209.720320         
+model.layers.21.self_attn.k_proj              torch.Size([1, 1, 2048])       243.341888           243.588209           644.513391           3077.734957         
+model.layers.21.self_attn.v_proj              torch.Size([1, 1, 2048])       228.818115           229.138613           624.168995           3184.113843         
+model.layers.21.self_attn.o_proj              torch.Size([1, 1, 2048])       219.195801           219.507456           694.648971           3382.426266         
+model.layers.21.post_attention_layernorm      torch.Size([1, 1, 2048])       12.803776            13.119936            671.580160           3602.595840         
+model.layers.21.mlp.experts.2.gate_proj       torch.Size([1, 1408])          158.807739           158.976316           643.967522           3268.907940         
+model.layers.21.mlp.experts.2.act_fn          torch.Size([1, 1408])          0.162432             0.258923             777.280000           3263.232000         
+model.layers.21.mlp.experts.2.up_proj         torch.Size([1, 1408])          147.196548           147.406101           672.991522           3127.581612         
+model.layers.21.mlp.experts.2.down_proj       torch.Size([1, 2048])          159.813126           160.006285           681.558135           3100.887579         
+model.layers.21.mlp.experts.47.gate_proj      torch.Size([1, 1408])          117.739967           117.917061           633.579940           3222.818388         
+model.layers.21.mlp.experts.47.act_fn         torch.Size([1, 1408])          0.190368             0.380516             777.280000           3212.757333         
+model.layers.21.mlp.experts.47.up_proj        torch.Size([1, 1408])          113.352707           113.524437           638.452132           3159.479523         
+model.layers.21.mlp.experts.47.down_proj      torch.Size([1, 2048])          107.337952           107.507229           654.933479           3339.590137         
+model.layers.21.mlp.experts.51.gate_proj      torch.Size([1, 1408])          115.192253           115.359306           648.327059           3132.184941         
+model.layers.21.mlp.experts.51.act_fn         torch.Size([1, 1408])          0.194688             0.313997             777.280000           3264.576000         
+model.layers.21.mlp.experts.51.up_proj        torch.Size([1, 1408])          102.672958           102.831125           673.019224           3241.409910         
+model.layers.21.mlp.experts.51.down_proj      torch.Size([1, 2048])          105.125923           105.290413           700.260438           3151.094657         
+model.layers.21.mlp.experts.54.gate_proj      torch.Size([1, 1408])          120.586655           120.732784           622.090994           3070.305767         
+model.layers.21.mlp.experts.54.act_fn         torch.Size([1, 1408])          0.184160             0.298023             622.080000           3109.120000         
+model.layers.21.mlp.experts.54.up_proj        torch.Size([1, 1408])          104.327454           104.521751           641.681067           3027.719585         
+model.layers.21.mlp.experts.54.down_proj      torch.Size([1, 2048])          110.184097           110.357285           689.472941           3091.974118         
+model.layers.21.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          444.297119           444.672823           675.104290           3105.734661         
+model.layers.21.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.361056             0.596523             777.280000           3418.624000         
+model.layers.21.mlp.shared_expert.up_proj     torch.Size([1, 5632])          435.195801           435.497046           695.398428           2969.283108         
+model.layers.21.mlp.shared_expert.down_proj   torch.Size([1, 2048])          439.683777           439.962149           680.343273           3021.914029         
+model.layers.21.mlp.shared_expert_gate        torch.Size([1, 1])             10.501888            10.777712            684.659692           3338.583385         
+model.layers.22.input_layernorm               torch.Size([1, 1, 2048])       10.213280            10.497332            610.644706           3121.171765         
+model.layers.22.self_attn.q_proj              torch.Size([1, 1, 2048])       169.371002           169.591904           560.025545           3181.653700         
+model.layers.22.self_attn.k_proj              torch.Size([1, 1, 2048])       165.904358           166.276217           632.644392           3317.103686         
+model.layers.22.self_attn.v_proj              torch.Size([1, 1, 2048])       142.415390           142.658234           624.108800           3183.567861         
+model.layers.22.self_attn.o_proj              torch.Size([1, 1, 2048])       145.436768           145.787477           690.964784           3005.243381         
+model.layers.22.post_attention_layernorm      torch.Size([1, 1, 2048])       10.979840            11.202097            668.634880           3264.576000         
+model.layers.22.mlp.experts.11.gate_proj      torch.Size([1, 1408])          163.763290           164.163828           646.282430           3027.649422         
+model.layers.22.mlp.experts.11.act_fn         torch.Size([1, 1408])          0.312896             0.514746             777.280000           3264.576000         
+model.layers.22.mlp.experts.11.up_proj        torch.Size([1, 1408])          157.019897           157.237291           670.682161           3273.653723         
+model.layers.22.mlp.experts.11.down_proj      torch.Size([1, 2048])          149.331161           149.506569           696.250746           3138.229970         
+model.layers.22.mlp.experts.14.gate_proj      torch.Size([1, 1408])          155.331650           155.549526           621.955507           3417.457973         
+model.layers.22.mlp.experts.14.act_fn         torch.Size([1, 1408])          0.267520             0.471830             699.552000           3962.496000         
+model.layers.22.mlp.experts.14.up_proj        torch.Size([1, 1408])          109.835999           109.999895           667.831758           3500.984727         
+model.layers.22.mlp.experts.14.down_proj      torch.Size([1, 2048])          108.361694           108.630896           702.605955           3183.824842         
+model.layers.22.mlp.experts.39.gate_proj      torch.Size([1, 1408])          121.678078           121.952534           630.884571           3268.252800         
+model.layers.22.mlp.experts.39.act_fn         torch.Size([1, 1408])          0.196960             0.304222             777.280000           3497.760000         
+model.layers.22.mlp.experts.39.up_proj        torch.Size([1, 1408])          108.284546           108.453274           651.241383           3198.057865         
+model.layers.22.mlp.experts.39.down_proj      torch.Size([1, 2048])          108.532387           108.680964           690.843359           3094.990168         
+model.layers.22.mlp.experts.51.gate_proj      torch.Size([1, 1408])          130.843719           131.031990           636.154182           3100.930424         
+model.layers.22.mlp.experts.51.act_fn         torch.Size([1, 1408])          0.194880             0.369072             777.280000           3264.576000         
+model.layers.22.mlp.experts.51.up_proj        torch.Size([1, 1408])          132.316254           132.503510           655.550619           3094.632058         
+model.layers.22.mlp.experts.51.down_proj      torch.Size([1, 2048])          160.270844           160.461187           655.233324           3216.014124         
+model.layers.22.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          416.608948           416.849375           669.253450           2891.699703         
+model.layers.22.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.258592             0.436544             776.960000           3574.016000         
+model.layers.22.mlp.shared_expert.up_proj     torch.Size([1, 5632])          452.730499           453.066111           695.582615           3072.025367         
+model.layers.22.mlp.shared_expert.down_proj   torch.Size([1, 2048])          457.334137           457.590103           683.538009           2974.447100         
+model.layers.22.mlp.shared_expert_gate        torch.Size([1, 1])             11.775392            12.067318            675.407127           3721.006545         
+model.layers.23.input_layernorm               torch.Size([1, 1, 2048])       13.442400            13.669491            622.054820           3460.807344         
+model.layers.23.self_attn.q_proj              torch.Size([1, 1, 2048])       175.041565           175.303936           608.344276           3141.053478         
+model.layers.23.self_attn.k_proj              torch.Size([1, 1, 2048])       175.535324           175.792456           635.982720           3327.506880         
+model.layers.23.self_attn.v_proj              torch.Size([1, 1, 2048])       165.611298           165.907621           629.967020           3127.550041         
+model.layers.23.self_attn.o_proj              torch.Size([1, 1, 2048])       165.193573           165.503740           699.728000           3114.497488         
+model.layers.23.post_attention_layernorm      torch.Size([1, 1, 2048])       4.840224             5.041122             738.416000           3515.890667         
+model.layers.23.mlp.experts.18.gate_proj      torch.Size([1, 1408])          158.392349           158.598185           647.696361           3251.783218         
+model.layers.23.mlp.experts.18.act_fn         torch.Size([1, 1408])          0.199264             0.335932             777.280000           3264.576000         
+model.layers.23.mlp.experts.18.up_proj        torch.Size([1, 1408])          152.690338           152.838469           625.902289           3266.334994         
+model.layers.23.mlp.experts.18.down_proj      torch.Size([1, 2048])          149.499237           149.671316           625.603408           3403.821444         
+model.layers.23.mlp.experts.38.gate_proj      torch.Size([1, 1408])          121.969086           122.266054           616.354341           3067.680390         
+model.layers.23.mlp.experts.38.act_fn         torch.Size([1, 1408])          0.215648             0.325441             621.824000           3264.576000         
+model.layers.23.mlp.experts.38.up_proj        torch.Size([1, 1408])          108.626717           108.771801           629.414748           3160.878585         
+model.layers.23.mlp.experts.38.down_proj      torch.Size([1, 2048])          106.815392           107.020378           686.874746           3332.621373         
+model.layers.23.mlp.experts.44.gate_proj      torch.Size([1, 1408])          116.832573           117.001772           647.539582           3068.646687         
+model.layers.23.mlp.experts.44.act_fn         torch.Size([1, 1408])          0.194592             0.301361             777.280000           3264.576000         
+model.layers.23.mlp.experts.44.up_proj        torch.Size([1, 1408])          108.948799           109.131575           667.841455           3281.782788         
+model.layers.23.mlp.experts.44.down_proj      torch.Size([1, 2048])          112.452095           112.626076           704.344242           3236.953212         
+model.layers.23.mlp.experts.52.gate_proj      torch.Size([1, 1408])          115.963005           116.130829           632.406448           3338.732418         
+model.layers.23.mlp.experts.52.act_fn         torch.Size([1, 1408])          0.189184             0.295162             777.280000           3264.576000         
+model.layers.23.mlp.experts.52.up_proj        torch.Size([1, 1408])          109.042877           109.226227           654.070229           3129.460275         
+model.layers.23.mlp.experts.52.down_proj      torch.Size([1, 2048])          111.781342           111.968994           684.449764           3101.813921         
+model.layers.23.mlp.shared_expert.gate_proj   torch.Size([1, 5632])          647.502075           647.775650           672.018327           3128.327445         
+model.layers.23.mlp.shared_expert.act_fn      torch.Size([1, 5632])          0.230624             0.406504             776.960000           4038.528000         
+model.layers.23.mlp.shared_expert.up_proj     torch.Size([1, 5632])          556.490540           556.748629           664.248766           3067.818421         
+model.layers.23.mlp.shared_expert.down_proj   torch.Size([1, 2048])          439.088409           439.364433           706.401639           3008.727519         
+model.layers.23.mlp.shared_expert_gate        torch.Size([1, 1])             6.586784             6.801844             777.208000           3348.697600         
+model.norm                                    torch.Size([1, 1, 2048])       6.004768             6.297112             736.216151           3387.691472         
+lm_head                                       torch.Size([1, 1, 151936])     13086.479492         13088.318110         1223.188858          3361.496250         
