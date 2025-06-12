@@ -35,7 +35,7 @@ First, install the correct version of PyTorch for your Jetson device.
 
 ```bash
 # Install PyTorch v2.0.0 for Jetson with JetPack 5.1.1
-conda install -c conda-forge huggingface_hub numpy=1.24.4 -y
+conda install -c conda-forge numpy=1.24.4 -y
 export TORCH_INSTALL=https://developer.download.nvidia.cn/compute/redist/jp/v511/pytorch/torch-2.0.0+nv23.05-cp38-cp38-linux_aarch64.whl
 pip install --no-cache $TORCH_INSTALL
 ```
@@ -44,6 +44,7 @@ Next, install the required Hugging Face libraries.
 
 ```bash
 # Install Transformers and Accelerate
+conda install -c conda-forge huggingface_hub -y
 conda install -c conda-forge transformers=4.45.0 -y
 pip install accelerate>=0.26.0
 ```
